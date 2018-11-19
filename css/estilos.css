@@ -79,6 +79,11 @@ body
 	padding-top: 50px;		
 }
 
+#tratamentos
+{
+	margin-top: 50px;
+}
+
 /* -- rodape -- */
 
 #rodape
@@ -152,9 +157,9 @@ ul
 
 /* ========================= Tipografia ======================== */
 
-#tratamentos h3
+#tratamentos h3, h1
 {
-	color: #27408B;	
+	color: #27408B;		
 }
 
 #rodape-pagamento h3
