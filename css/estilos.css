@@ -79,9 +79,16 @@ body
 	padding-top: 50px;		
 }
 
+/* -- Seção Tratamentos -- */
+
 #tratamentos
 {
 	margin-top: 50px;
+}
+
+.thumbnail
+{
+	border: 0px solid #27408B
 }
 
 /* -- rodape -- */
