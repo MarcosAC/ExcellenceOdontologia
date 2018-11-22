@@ -18,6 +18,19 @@
 
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
+        <script>
+            $(window).scroll(function () {
+                $(".slideanim").each(function () {
+                    var pos = $(this).offset().top;
+
+                    var winTop = $(window).scrollTop();
+                    if (pos < winTop + 600) {
+                        $(this).addClass("_slide");
+                    }
+                });
+            });
+        </script>
+
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -66,7 +79,7 @@
             </div>
         </nav>
 
-        <section id="banner">
+        <section id="banner" style="padding-top: 50px">
             <div class="container"> <!-- Inicio Banner -->      
                 <div id="carousel" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
@@ -109,11 +122,11 @@
             </div> <!-- Fim Banner -->      
         </section>
 
-        <section class="container" id="tratamentos">
+        <section id="tratamentos" class="container">
             <h1 style="text-align:center">Tratamentos</h1>            
             <div class="row">
                 <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail">
+                    <div class="thumbnail slideanim">
                         <img src="imagens/ortodontia.png" alt="...">
                         <div class="caption">
                             <h3>Ortodontia</h3>
@@ -124,7 +137,7 @@
                 </div>
 
                 <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail">
+                    <div class="thumbnail slideanim">
                         <img src="imagens/implante.png" alt="...">
                         <div class="caption">
                             <h3>Implantes</h3>
@@ -135,7 +148,7 @@
                 </div>
 
                 <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail">
+                    <div class="thumbnail slideanim">
                         <img src="imagens/endodontia.png" alt="...">
                         <div class="Endodontia">
                             <h3>Endodontia</h3>
@@ -148,7 +161,7 @@
 
             <div class="row">
                 <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail">
+                    <div class="thumbnail slideanim">
                         <img src="imagens/periodontia.png" alt="...">
                         <div class="caption">
                             <h3>Periodontia</h3>
@@ -159,7 +172,7 @@
                 </div>
 
                 <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail">
+                    <div class="thumbnail slideanim">
                         <img src="imagens/restauracao.png" alt="...">
                         <div class="caption">
                             <h3>Restaurações</h3>
@@ -170,7 +183,7 @@
                 </div>
 
                 <div class="col-sm-6 col-md-4">
-                    <div class="thumbnail">
+                    <div class="thumbnail slideanim">
                         <img src="imagens/clariamento.png" alt="...">
                         <div class="caption">
                             <h3>Clariamento</h3>
